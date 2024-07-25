@@ -1,0 +1,19 @@
+<sbb-header-button id="menu-trigger" icon-name="hamburger-menu-small">
+  Menu
+</sbb-header-button>
+<sbb-navigation trigger="menu-trigger">
+  <sbb-navigation-marker>
+    <sbb-navigation-button aria-current="page" id="menu-section-1">
+      open subnavigation
+    </sbb-navigation-button>
+  </sbb-navigation-marker>
+
+  <sbb-navigation-section trigger="menu-section-1">
+    <sbb-navigation-list>
+      <span slot="label"></span>
+      <sbb-navigation-button [routerLink]="['/target']">
+        to target
+      </sbb-navigation-button>
+    </sbb-navigation-list>
+  </sbb-navigation-section>
+</sbb-navigation>
